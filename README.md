@@ -25,6 +25,13 @@ Para rodar os algoritmos, basta estar dentro da pasta com o código e aplicar no
 python computacaoGrafica.py
 ```
 
+## Estrutura 
+O código contém duas classes: Application e Outros. A classe Application contém os algoritmos/transformações aplicavéis em uma reta e a janela de visualização. A classe Outros contém os algoritmos de preenchimento e os aplicavéis em uma circunferência. 
+
+Ambos são estruturados com containers no ínicio, que representam o bloco aonde ficará a informação na interface. Após os containers, configura-se cada 'Label' e 'Button'. E por fim, as funções.
+
 ## Manual do Usuário
+
+Para mais informações, abra o ManualUsuario.pdf
 
 
