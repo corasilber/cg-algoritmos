@@ -27,4 +27,6 @@ python computacaoGrafica.py
 
 ## Manual do Usuário
 
+Para mais informações, abra o ManualUsuario.pdf
+
 
