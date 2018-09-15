@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 from tkinter import *
 import numpy as np
 import math
-from pyx import *
 from PIL import Image
 
 class Application:
