@@ -34,4 +34,6 @@ Ambos são estruturados com containers no ínicio, que representam o bloco aonde
 
 Para mais informações, abra o ManualUsuario.pdf
 
+Para ver o programa funcionando, abra o arquivo Video_Interface_Funcionando.mp4
+
 
