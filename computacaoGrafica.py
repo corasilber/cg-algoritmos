@@ -171,7 +171,7 @@ class Application:
         self.grau = Label(self.container10, text=" º", font=self.fontePadrao)
         self.grau.pack(side=LEFT)
 
-        self.rotacao = Button(self.container10, text="Rotacionar", command=self.aplicaRotacao)
+        self.rotacao = Button(self.container10, text="Rotacão", command=self.aplicaRotacao)
         self.rotacao["font"] = ("Calibri", "9")
         self.rotacao["width"] = 12
         self.rotacao.pack(side=RIGHT, padx=10)
@@ -462,6 +462,8 @@ class Application:
 
         aceito = False
         feito = False
+        xInt = 0
+        yInt = 0
 
         while(not feito):
             cod1 = self.obtemCodigo(x1, y1)
@@ -470,6 +472,7 @@ class Application:
             if(cod1 == 0 and cod2 == 0):
                 aceito = True
                 feito = True
+
             # se ambas estão fora da janela
             elif ((cod1 & cod2) != 0) : feito = True
             else:
@@ -679,7 +682,6 @@ class Outros:
         y1 = int(self.yCircun.get())
         raio = int(self.raioCircun.get())
 
-
         #Converte x e y para inteiros
         x = int(x)
         y = int(y)
@@ -694,14 +696,10 @@ class Outros:
             self.boundaryFill4(x, y + 1, corBorda, corNova)
             self.boundaryFill4(x, y - 1, corBorda, corNova)
 
-        print("done")
-
     def obtemCor(self, x, y, x1, y1, raio):
 
-        if((math.sqrt(x - x1) + math.sqrt(y - y1)) == math.sqrt(raio)):
+        if ((math.pow(x - x1, 2) + math.pow(y - y1, 2)) >= math.pow(raio, 2)):
             self.colors[x][y] = 1
-        else:
-            self.colors[x][y] = 0
 
         return self.colors[x][y]
 
